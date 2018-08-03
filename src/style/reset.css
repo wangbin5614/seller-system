@@ -1,0 +1,144 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{ 
+	-webkit-appearance: none !important;          
+}
+input[type="number"]{
+	-moz-appearance:textfield;
+}
+/* 全局的loading加载 */
+.fullscreen-loading i{
+	font-size: 26px;
+}
+
+/* 导航侧边栏 */
+.el-menu-item.is-active{
+	background: #409eff!important;
+}
+.el-menu-item-group__title{
+	padding: 0;
+}
+.el-submenu .el-menu-item{
+	padding-left: 65px!important;
+}
+.el-submenu__title{
+	font-size: 16px;
+}
+.el-submenu__title i{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.el-menu-item{
+	font-size: 16px;
+}
+/* 按钮 */
+.el-button--primary{
+	width: 108px;
+	padding: 8px 20px;
+	box-sizing: border-box;
+}
+/* 确认框中的按钮 */
+.el-message-box__btns .el-button--primary{
+	padding: 9px 15px;
+	width: auto;
+}
+/* 所有输入框的边框颜色 */
+.el-input__inner,.el-textarea__inner{
+	border-color: #999999;
+}
+/* 表格 */
+.table-wrapper{
+	overflow: hidden;
+}
+.el-table{
+	margin: 15px 0;
+}
+.el-table td{
+	padding: 4px 0;
+}
+.el-table th{
+	background: #409efe;
+	color: #fff;
+}
+.el-table tr{
+	background: #edf7ff;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+	background: #d9ebf7;
+}
+/* 分页 */
+.el-pagination{
+	float: right;
+	margin-top: 15px;
+}
+.el-dialog{
+	border-radius: 6px;
+  }
+.el-step__title.is-finish {
+  color: #333;
+}
+.el-step__head.is-finish{
+	color: #333;
+	border-color:#333; 
+}
+/* 轮播的切换按钮 */
+.el-carousel__button{
+	height: 5px;
+}
+.el-carousel__indicator.is-active button{
+	background: #409eff;
+}
+.el-carousel__arrow{
+	background-color: rgba(31,45,61,.41);
+}
+.el-popover{
+	min-width: auto;
+}
