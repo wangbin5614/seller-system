@@ -50,54 +50,6 @@ Vue.prototype.getTime = function (val) {
   }
 }
 
-// let loading;
-// axios.defaults.baseURL = '/api'
-// //http request 拦截器
-// axios.interceptors.request.use(
-//   config => {
-//     if (config.method === "post") {
-//       // 序列化
-//       config.data = qs.stringify(config.data);
-//     }
-//     if (localStorage.getItem('auth_token')) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
-//       config.headers.auth_token = localStorage.getItem('auth_token');
-//     }
-//     loading = Loading.service({
-//       customClass: 'fullscreen-loading',
-//       lock: true,
-//       text: '拼命加载中',
-//       spinner: 'el-icon-loading',
-//       background: 'rgba(0, 0, 0, 0.7)'
-//     })
-//     return config;
-//   },
-//   err => {
-//     return Promise.reject(err);
-//   });
-
-//   //http response 拦截器
-//   axios.interceptors.response.use(
-//     response => {
-//         //当返回信息为未登录或者登录失效的时候重定向为登录页面
-//         // if(response.data.code == 'W_100004' || response.data.message == '用户未登录或登录超时，请登录！'){
-//         //     router.push({
-//         //         path:"/",
-//         //         querry:{redirect:router.currentRoute.fullPath}//从哪个页面跳转
-//         //     })
-//         // }
-//         loading.close()
-//         return response;
-//     },
-//     error => {
-//       alert(error);
-//       loading.close()
-//       return Promise.reject(error)
-//     }
-// )
-// Vue.prototype.$post = axios.post;
-// Vue.prototype.$get = axios.get;
-
-
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
