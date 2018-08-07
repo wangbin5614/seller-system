@@ -9,6 +9,7 @@ import ElementUI from 'element-ui';
 // import { Loading } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import './style/reset.css';
+
 Vue.use(ElementUI);
 
 import Breadcrumb from './components/breadcrumb/index';
